@@ -16,7 +16,11 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: 'Portfolio of Julien Rougeron, frontend developer' },
         { name: 'keywords', content: 'julien,rougeron,julien rougeron,portfolio,frontend,developer' },
       ]}
-    />
+    >
+      <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    </Helmet>
+
     <Header />
     { children() }
   </div>

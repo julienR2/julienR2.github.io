@@ -1,21 +1,58 @@
-import React from 'react'
-import { Jumbotron, Button } from 'reactstrap';
-import Link from 'gatsby-link'
+import React, { Component } from 'react'
+import { Jumbotron, Container, Row, Col } from 'reactstrap';
+import Slider from "react-slick";
 
 import './index.scss';
 
-const IndexPage = () => (
-  <div>
-      <Jumbotron>
-        <h1 className="display-3">Hello, world!</h1>
-        <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr className="my-2" />
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p className="lead">
-          <Button color="primary">Learn More</Button>
-        </p>
-      </Jumbotron>
-    </div>
-)
+export default class IndexPage extends Component {
+  constructor(props) {
+    super(props);
 
-export default IndexPage
+    this.state = {
+      slideSettings: {
+        arrows: false,
+        infinite: true,
+        speed: 200,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      },
+    }
+  }
+
+  render() {
+    const { slideSettings } = this.state;
+
+    return (
+      <div>
+        <Jumbotron>
+          <Container>
+            <Row>
+              <Col sm="6" className="text-col">
+                <h1 className="in">Hi, I am Julien</h1>
+                <p className="in">a visual and interaction developer</p>
+              </Col>
+              <Col sm="6">
+                <div className="imac-frame in">
+                  <img className="img-fluid img-center" src="images/imac.png" />
+                  <Slider { ...slideSettings }>
+                    <div>
+                      <img src="images/slide_4.jpg" />
+                    </div>
+                    <div>
+                      <img src="images/slide_2.jpg" />
+                    </div>
+                    <div>
+                      <img src="images/slide_3.jpg" />
+                    </div>
+                  </Slider>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </Jumbotron>
+      </div>
+    )
+  }
+}
