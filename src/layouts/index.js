@@ -4,17 +4,18 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
-      title={data.site.siteMetadata.title}
+      title="Julien's Portfolio"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Portfolio of Julien Rougeron, frontend developer' },
+        { name: 'keywords', content: 'julien,rougeron,julien rougeron,portfolio,frontend,developer' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header />
     <div
       style={{
         margin: '0 auto',
@@ -33,13 +34,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
