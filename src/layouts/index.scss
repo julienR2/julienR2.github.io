@@ -1,0 +1,65 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+  color: #3a3c4a;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab',serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin: 0 0 20px;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+a,
+a:focus,
+a:hover {
+  outline: none !important;
+  text-decoration: none;
+}
+
+a {
+  color: #38A5DB;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #38A5DB;
+  text-decoration: underline;
+}
+
+.btn:focus,
+a:focus {
+  outline: none;
+}
+
+.color-bg a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.color-bg a:focus,
+.color-bg a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.primary {
+  color: #38A5DB;
+}
