@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import Header from '../components/header'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './reset.css'
-import './fonts.scss'
-import './index.scss'
+import Header from '../components/header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './reset.css';
+import './fonts.scss';
+import './index.scss';
 
 export default class Layour extends React.Component {
   static propTypes = {
@@ -15,18 +15,18 @@ export default class Layour extends React.Component {
 
   constructor(props) {
     super(props);
-    
+
     this.state = {
       scroll: window.scrollY,
-    }
+    };
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll = (event) => {

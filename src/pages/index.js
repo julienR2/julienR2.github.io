@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Jumbotron, Container, Row, Col } from 'reactstrap';
 import Slider from "react-slick";
 
@@ -18,7 +18,7 @@ export default class IndexPage extends Component {
         autoplay: true,
         autoplaySpeed: 3000,
       },
-    }
+    };
   }
 
   render() {
@@ -53,6 +53,6 @@ export default class IndexPage extends Component {
           </Container>
         </Jumbotron>
       </div>
-    )
+    );
   }
 }

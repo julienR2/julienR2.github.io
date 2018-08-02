@@ -1,9 +1,7 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   Container,
-  Row,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -12,7 +10,7 @@ import {
   NavLink,
 } from 'reactstrap';
 
-import './header.scss'
+import './styles.scss';
 
 export default class Header extends Component {
   static propTypes = {
@@ -41,29 +39,40 @@ export default class Header extends Component {
             <Collapse isOpen={isOpen} navbar>
               <Nav navbar>
                 <NavItem>
-                  <NavLink href="#services">What I Do</NavLink>
+                  <NavLink href="#services">
+                    What I Do
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#about">About Me</NavLink>
+                  <NavLink href="#about">
+                    About Me
+                  </NavLink>
                 </NavItem>
                 <NavItem className="logo">
                   <NavLink href="#home">
                     <h1>
-                      J<span>R</span>
+                      J
+                      <span>
+                        R
+                      </span>
                     </h1>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#portfolio">My Works</NavLink>
+                  <NavLink href="#portfolio">
+                    My Works
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#contact">Contact Me</NavLink>
+                  <NavLink href="#contact">
+                    Contact Me
+                  </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </Container>
         </Navbar>
       </div>
-    )
+    );
   }
 }

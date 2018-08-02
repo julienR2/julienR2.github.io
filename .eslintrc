@@ -5,7 +5,6 @@
         "react",
         "jsx-a11y",
         "import",
-        "react-native"
     ],
     "rules": {
         "no-underscore-dangle": "off",
@@ -14,6 +13,7 @@
         "react/forbid-prop-types": "off",
         "react/require-default-props": "off",
         "react/forbid-foreign-prop-types": "off",
+        "import/no-extraneous-dependencies": "off",
         "jsx-a11y/href-no-hash": "off",
         "no-nested-ternary": "off",
         "no-use-before-define": ["error", { "variables": false }],
@@ -22,12 +22,8 @@
     "settings": {
         "import/resolver": {
             "node": {
-                "extensions": [".js", ".android.js", ".ios.js"]
+                "extensions": [".js"]
             }
         }
-    },
-    "globals": {
-        "fetch": false,
-        "navigator": false
     }
 }
