@@ -4,8 +4,6 @@ import {
 } from 'reactstrap';
 import Slider from 'react-slick';
 
-import styles from './styles.module.scss';
-
 export default class Hero extends Component {
   constructor(props) {
     super(props);
@@ -28,21 +26,21 @@ export default class Hero extends Component {
 
     return (
       <div>
-        <Jumbotron className={styles.jumbotron}>
+        <Jumbotron>
           <Container>
             <Row>
-              <Col sm="6" className={styles.textCol}>
-                <h1>
+              <Col sm="6" className="text-col">
+                <h1 className="in">
                   Hi, I am Julien
                 </h1>
-                <p>
+                <p className="in">
                   a visual and interaction developer
                 </p>
               </Col>
               <Col sm="6">
-                <div className={styles.imacFrame}>
+                <div className="imac-frame in">
                   <img className="img-fluid img-center" src="images/imac.png" alt="imac" />
-                  <Slider {...slideSettings} className={styles.slickSlider}>
+                  <Slider {...slideSettings}>
                     <div>
                       <img src="images/slide_4.jpg" alt="slide4" />
                     </div>

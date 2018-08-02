@@ -4,7 +4,7 @@ import Slider from "react-slick";
 
 import Header from '../components/header';
 import Hero from '../components/hero';
-import './styles.scss';
+import Services from '../components/services';
 
 export default class IndexPage extends Component {
   constructor(props) {
@@ -33,6 +33,7 @@ export default class IndexPage extends Component {
     return (
       <div>
         <Header scrolled={scroll !== 0} />
+        <Hero />
         <Hero />
       </div>
     );
