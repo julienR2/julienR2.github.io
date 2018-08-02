@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import {
   Container,
@@ -14,6 +15,10 @@ import {
 import './header.scss'
 
 export default class Header extends Component {
+  static propTypes = {
+    scrolled: PropTypes.bool,
+  }
+
   constructor(props) {
     super(props);
 
@@ -26,10 +31,11 @@ export default class Header extends Component {
 
   render() {
     const { isOpen } = this.state;
+    const { scrolled } = this.props;
 
     return (
       <div>
-        <Navbar expand="md" fixed="top">
+        <Navbar expand="md" fixed="top" className={scrolled ? 'scrolled' : ''}>
           <Container>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={isOpen} navbar>

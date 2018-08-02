@@ -16,23 +16,25 @@
       padding: 0;
     }
 
-    .navbar-nav a {
-      color: inherit;
+    .navbar-nav {
+      a {
+        color: inherit;
 
-      &:before {
-        background: #3a3c4a;
-      }
-    }
-
-    .logo {
-      h1 {
-        font-size: 52px;
+        &:before {
+          background: #3a3c4a;
+        }
       }
 
-      a:hover {
-        color: #38A5DB;
-        -webkit-transition: color 0.2s ease-out;
-        transition: color 0.2s ease-out;
+      .logo {
+        h1 {
+          font-size: 52px;
+        }
+
+        a:hover {
+          color: #38A5DB;
+          -webkit-transition: color 0.2s ease-out;
+          transition: color 0.2s ease-out;
+        }
       }
     }
   }
