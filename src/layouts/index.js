@@ -13,28 +13,7 @@ export default class Layour extends React.Component {
     children: PropTypes.func,
   }
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      scroll: window.scrollY,
-    };
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll = (event) => {
-    this.setState({ scroll: window.scrollY });
-  }
-
   render() {
-    const { scroll } = this.state;
     const { children, data } = this.props;
 
     return (
@@ -49,8 +28,6 @@ export default class Layour extends React.Component {
           <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
         </Helmet>
-
-        <Header scrolled={scroll !== 0} />
         { children() }
       </div>
     );
