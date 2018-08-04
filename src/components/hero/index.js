@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import {
   Jumbotron, Container, Row, Col,
 } from 'reactstrap';
@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 
 import styles from './styles.module.scss';
 
-export default class Hero extends Component {
+export default class Hero extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -44,13 +44,13 @@ export default class Hero extends Component {
                   <img className="img-fluid img-center" src="images/imac.png" alt="imac" />
                   <Slider {...slideSettings} className={styles.slickSlider}>
                     <div>
-                      <img src="images/slide_4.jpg" alt="slide4" />
+                      <img src="images/slides/slide_4.jpg" alt="slide4" />
                     </div>
                     <div>
-                      <img src="images/slide_2.jpg" alt="slide2" />
+                      <img src="images/slides/slide_2.jpg" alt="slide2" />
                     </div>
                     <div>
-                      <img src="images/slide_3.jpg" alt="slide3" />
+                      <img src="images/slides/slide_3.jpg" alt="slide3" />
                     </div>
                   </Slider>
                 </div>

@@ -1,62 +1,14 @@
-import React, { Component } from 'react';
-import {
-  Jumbotron, Container, Row, Col,
-} from 'reactstrap';
-import Slider from 'react-slick';
+import React from 'react';
 
-export default class Hero extends Component {
-  constructor(props) {
-    super(props);
+import Section from '../section';
 
-    this.state = {
-      slideSettings: {
-        arrows: false,
-        infinite: true,
-        speed: 200,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-      },
-    };
-  }
+const Services = () => (
+  <div>
+    <Section
+      title="What I Do"
+      subtitle="Social traveler and developer, I try to create more meaningful interfaces<br />with better user experience, to help people communicate and interact"
+    />
+  </div>
+);
 
-  render() {
-    const { slideSettings } = this.state;
-
-    return (
-      <div>
-        <Jumbotron>
-          <Container>
-            <Row>
-              <Col sm="6" className="text-col">
-                <h1 className="in">
-                  Hi, I am Julien
-                </h1>
-                <p className="in">
-                  a visual and interaction developer
-                </p>
-              </Col>
-              <Col sm="6">
-                <div className="imac-frame in">
-                  <img className="img-fluid img-center" src="images/imac.png" alt="imac" />
-                  <Slider {...slideSettings}>
-                    <div>
-                      <img src="images/slide_4.jpg" alt="slide4" />
-                    </div>
-                    <div>
-                      <img src="images/slide_2.jpg" alt="slide2" />
-                    </div>
-                    <div>
-                      <img src="images/slide_3.jpg" alt="slide3" />
-                    </div>
-                  </Slider>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </Jumbotron>
-      </div>
-    );
-  }
-}
+export default Services;
