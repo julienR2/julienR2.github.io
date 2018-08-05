@@ -1,0 +1,26 @@
+.button {
+  a {
+    display: inline-block;
+    padding: 0 30px;
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 52px;
+    height: 52px;
+    background: #38A5DB;
+    color: #fff;
+    border-radius: 52px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 0.8;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: #fff;
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+}

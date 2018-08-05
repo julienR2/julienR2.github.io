@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Section from '../section';
+import Button from '../button';
 
 import styles from './styles.module.scss';
 
@@ -14,6 +15,9 @@ const Featured = () => (
       <div className={styles.imageWrapper}>
         <img src="images/chrome.png" alt="chrome" />
         <img src="images/nowmad.jpg" alt="nowmad" />
+        <Button href="https://nowmad.io" target="_blank">
+          Visit Website
+        </Button>
       </div>
     </Section>
   </div>
