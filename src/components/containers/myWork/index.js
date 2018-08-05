@@ -32,21 +32,23 @@ export default class MyWork extends PureComponent {
 
   render() {
     const { projects, filters, selectedFilter } = this.state;
-    const childElements = _.compact(projects.map(({ title, keywords }) => {
+    const childElements = _.compact(projects.map(({ title, keywords, images }) => {
       if (selectedFilter === 'All' || _.indexOf(keywords, selectedFilter) !== -1) {
         return (
-          <Col xs="12" sm="6" md="4" lg="3" key={title}>
-            <div className={styles.project}>
-              {title}
-            </div>
+          <Col
+            xs="12"
+            sm="6"
+            lg="4"
+            key={title}
+            className={styles.project}
+          >
+            <img src={images.main} alt={title} />
           </Col>
         );
       }
 
       return null;
     }));
-
-    console.log('childElements', childElements);
 
     return (
       <div>

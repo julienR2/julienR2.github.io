@@ -6,7 +6,10 @@
     "link": "https://nowmad.io",
     "stack": ["React Native", "Django", "Heroku"],
     "keywords": ["Frontend", "Backend"],
-    "when":"October 2017 - current"
+    "when":"October 2017 - current",
+    "images": {
+      "main": "/images/projects/nowmad/main.jpg"
+    }
   },
   {
     "title": "Easemail",
@@ -15,7 +18,10 @@
     "link": "https://github.com/julienR2/easemail/tree/develop",
     "stack": ["React"],
     "keywords": ["Frontend", "Email Templating", "Integration"],
-    "when":"Mai 2017"
+    "when":"Mai 2017",
+    "images": {
+      "main": "/images/projects/easemail/main.jpg"
+    }
   },
   {
     "title": "NouMa",
@@ -24,7 +30,10 @@
     "link": "https://nouma.fr",
     "stack": ["Angular 2", "Angular Universal", "Express"],
     "keywords": ["Frontend", "Integration", "Email Templating"],
-    "when":"January 2016 - June 2018"
+    "when":"January 2016 - June 2018",
+    "images": {
+      "main": "/images/projects/nouma/main.jpg"
+    }
   },
   {
     "title": "Bookmark It",
@@ -33,7 +42,10 @@
     "link": "https://github.com/bookmark-it",
     "stack": ["VueJs", "Django", "Web Extension"],
     "keywords": ["Frontend", "Backend"],
-    "when":"2017"
+    "when":"2017",
+    "images": {
+      "main": "/images/projects/bookmarkit/main.jpg"
+    }
   },
   {
     "title": "Clockmap",
@@ -42,7 +54,10 @@
     "link": "https://github.com/julienR2/clockmap",
     "stack": ["VanillaJs", "Google Map API", "Google Place API"],
     "keywords": ["Frontend"],
-    "when":"2016"
+    "when":"2016",
+    "images": {
+      "main": "/images/projects/clockmap/main.jpg"
+    }
   },
   {
     "title": "Renkan",
@@ -51,6 +66,9 @@
     "link": "http://hdalab.iri-research.org/hdalab/renkan/public/",
     "stack": ["BackboneJs"],
     "keywords": ["Frontend"],
-    "when":"2015"
+    "when":"2015",
+    "images": {
+      "main": "/images/projects/renkan/main.jpg"
+    }
   }
 ]
