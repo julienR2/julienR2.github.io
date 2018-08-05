@@ -14,11 +14,14 @@
   transition: all 0.3s ease-out;
   opacity: 0.8;
   cursor: pointer;
+  outline: none;
 
-  a {
+  a,
+  .a {
     text-decoration: none;
     display: inline-block;
     color: inherit;
+    outline: inherit;
   }
 
   &:hover {

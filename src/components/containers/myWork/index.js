@@ -28,21 +28,26 @@ export default class MyWork extends PureComponent {
       }));
   }
 
-  onFilterSelect = filter => () => {
-    console.log('filter', filter);
-    this.setState({ selectedFilter: filter });
-  };
+  onFilterSelect = filter => () => this.setState({ selectedFilter: filter });
 
   render() {
     const { projects, filters, selectedFilter } = this.state;
-    const childElements = projects.map(({ title }) => (
-      <Col xs="12" sm="6" md="4" lg="3" key={title}>
-        <div className={styles.project}>
-          {title}
-        </div>
-      </Col>
-    ));
-    console.log('selectedFilter', selectedFilter);
+    const childElements = _.compact(projects.map(({ title, keywords }) => {
+      if (selectedFilter === 'All' || _.indexOf(keywords, selectedFilter) !== -1) {
+        return (
+          <Col xs="12" sm="6" md="4" lg="3" key={title}>
+            <div className={styles.project}>
+              {title}
+            </div>
+          </Col>
+        );
+      }
+
+      return null;
+    }));
+
+    console.log('childElements', childElements);
+
     return (
       <div>
         <Section
@@ -50,7 +55,7 @@ export default class MyWork extends PureComponent {
           subtitle="I've had the oportunity to work on many differents projects and technologies.<br />Here are some of them !"
           className={styles.section}
         >
-          <div>
+          <div className={styles.filters}>
             {filters.map(filter => (
               <Button
                 key={filter}

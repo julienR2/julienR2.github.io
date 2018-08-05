@@ -9,6 +9,7 @@ export default class Button extends PureComponent {
       PropTypes.object,
       PropTypes.string,
     ]),
+    onClick: PropTypes.func,
     className: PropTypes.string,
     href: PropTypes.string,
     target: PropTypes.string,
@@ -18,12 +19,19 @@ export default class Button extends PureComponent {
 
   render() {
     const {
-      children, href, target, className, type, active,
+      children, onClick, href, target, className, type, active,
     } = this.props;
+    const buttonProps = !href ? {
+      onClick,
+      onKeyPress: onClick,
+      role: 'button',
+      tabIndex: '0',
+    } : {};
 
     return (
       <div
         className={`${styles.button} ${className || ''} ${type ? styles[type] : ''} ${active ? styles.active : ''}`}
+        {...buttonProps}
       >
         {href ? (
           <a href={href} target={target} className={`${active ? styles.active : ''}`}>
