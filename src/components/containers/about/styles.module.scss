@@ -1,0 +1,15 @@
+.section {
+  background-color: #1D2026;
+  color: #FFFFFF;
+
+  p, a {
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  img {
+    margin-bottom: 40px;
+    border: 15px solid transparent;
+    box-shadow: 5px 3px 0 rgba(255,255,255,.6);
+  }
+}

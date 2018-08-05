@@ -12,15 +12,16 @@ export default class Button extends PureComponent {
     className: PropTypes.string,
     href: PropTypes.string,
     target: PropTypes.string,
+    light: PropTypes.bool,
   }
 
   render() {
     const {
-      children, href, target, className,
+      children, href, target, className, light,
     } = this.props;
 
     return (
-      <div className={`${styles.button} ${className || ''}`}>
+      <div className={`${styles.button} ${className || ''} ${light ? styles.light : ''}`}>
         <a href={href} target={target}>
           {children}
         </a>

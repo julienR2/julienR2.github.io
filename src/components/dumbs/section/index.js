@@ -12,7 +12,7 @@ export default class Section extends PureComponent {
       PropTypes.object,
       PropTypes.string,
     ]),
-    style: PropTypes.oneOfType([
+    className: PropTypes.oneOfType([
       PropTypes.object,
       PropTypes.number,
       PropTypes.array,
@@ -24,11 +24,11 @@ export default class Section extends PureComponent {
 
   render() {
     const {
-      title, subtitle, children, style,
+      title, subtitle, children, className,
     } = this.props;
 
     return (
-      <div className={`${styles.section} ${style || ''}`}>
+      <div className={`${styles.section} ${className || ''}`}>
         <Container>
           <div className={styles.sectionHeader}>
             <h1>

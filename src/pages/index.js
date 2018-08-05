@@ -6,6 +6,7 @@ import Header from '../components/containers/header';
 import Hero from '../components/containers/hero';
 import Services from '../components/containers/services';
 import Featured from '../components/containers/featured';
+import About from '../components/containers/about';
 
 export default class IndexPage extends Component {
   constructor(props) {
@@ -37,6 +38,7 @@ export default class IndexPage extends Component {
         <Hero />
         <Services />
         <Featured />
+        <About />
       </div>
     );
   }
