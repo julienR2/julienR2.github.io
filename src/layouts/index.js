@@ -8,7 +8,7 @@ import './reset.css';
 import './fonts.scss';
 import './index.scss';
 
-export default class Layour extends React.Component {
+export default class Layout extends React.Component {
   static propTypes = {
     children: PropTypes.func,
   }
