@@ -7,6 +7,7 @@ import Hero from '../components/containers/hero';
 import Services from '../components/containers/services';
 import Featured from '../components/containers/featured';
 import About from '../components/containers/about';
+import MyWork from '../components/containers/myWork';
 
 export default class IndexPage extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ export default class IndexPage extends Component {
         <Services />
         <Featured />
         <About />
+        <MyWork />
       </div>
     );
   }

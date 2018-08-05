@@ -11,6 +11,7 @@ export default class Section extends PureComponent {
       PropTypes.array,
       PropTypes.object,
       PropTypes.string,
+      PropTypes.number,
     ]),
     className: PropTypes.oneOfType([
       PropTypes.object,

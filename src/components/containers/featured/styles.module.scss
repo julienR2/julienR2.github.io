@@ -19,10 +19,10 @@
   .button {
     position: absolute;
     top: 50%;
-    width: 100%;
+    left: 50%;
     opacity: 0;
-    -webkit-transform: translateX(-50px);
-    transform: translateX(-50px);
+    -webkit-transform: translateX(calc(-50% - 50px));
+    transform: translateX(calc(-50% - 50px));
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
   }
@@ -33,12 +33,8 @@
     }
 
     .button {
-      transform: translateX(0);
+      transform: translateX(-50%);
       opacity: 1;
-
-      a {
-        opacity: 1;
-      }
     }
   }
 }

@@ -9,7 +9,7 @@ import Button from '../../dumbs/button';
 
 import styles from './styles.module.scss';
 
-const Services = () => (
+const About = () => (
   <div>
     <Section
       title="About Me"
@@ -22,11 +22,11 @@ const Services = () => (
             I am Julien Rougeron, a 25 years old Frontend Engineer from France. Graduated from the "Université de Technologie de Compiègne", I have a passion for working on developing interfaces using emerging technologies.
             <br /> Particularly interested in UX and UI, I position my personal projects in studying the ways to meet user needs and develop new interactions.
           </p>
-          <Button light>Hire Me</Button>
+          <Button type="light" className={styles.button}>Hire Me</Button>
         </Col>
       </Row>
     </Section>
   </div>
 );
 
-export default Services;
+export default About;

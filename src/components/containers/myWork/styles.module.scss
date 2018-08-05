@@ -1,0 +1,13 @@
+.section {
+  background-color: #f2f2f2;
+}
+
+.filter:not(:last-child) {
+  margin-right: 10px;
+}
+
+.project {
+  height: 220px;
+  margin-bottom: 25px;
+  background-color: #000000;
+}

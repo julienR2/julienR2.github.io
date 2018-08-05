@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Nowmad",
+    "description": "Design and development company - Specialised in geospatial representations and projects with social impact - Showcasing nowmad.io, a social network for travellers !",
+    "type": "Agency / Mobile App",
+    "link": "https://nowmad.io",
+    "stack": ["React Native", "Django", "Heroku"],
+    "keywords": ["Frontend", "Backend"],
+    "when":"October 2017 - current"
+  },
+  {
+    "title": "Easemail",
+    "description": "Email templating tool to improve interaction between developer, designer and marketing teams",
+    "type": "Templating Webapp",
+    "link": "https://github.com/julienR2/easemail/tree/develop",
+    "stack": ["React"],
+    "keywords": ["Frontend", "Email Templating", "Integration"],
+    "when":"Mai 2017"
+  },
+  {
+    "title": "NouMa",
+    "description": "Public tenders centralization platform",
+    "type": "Webapp",
+    "link": "https://nouma.fr",
+    "stack": ["Angular 2", "Angular Universal", "Express"],
+    "keywords": ["Frontend", "Integration", "Email Templating"],
+    "when":"January 2016 - June 2018"
+  },
+  {
+    "title": "Bookmark It",
+    "description": "Bookmarks management platform. Save your bookmarks using browser extention and access them everywhere !",
+    "type": "Webapp & Browser Extensions",
+    "link": "https://github.com/bookmark-it",
+    "stack": ["VueJs", "Django", "Web Extension"],
+    "keywords": ["Frontend", "Backend"],
+    "when":"2017"
+  },
+  {
+    "title": "Clockmap",
+    "description": "A small lib to create a nice looking clock display the hour and the map of the city of your choice",
+    "type": "Library",
+    "link": "https://github.com/julienR2/clockmap",
+    "stack": ["VanillaJs", "Google Map API", "Google Place API"],
+    "keywords": ["Frontend"],
+    "when":"2016"
+  },
+  {
+    "title": "Renkan",
+    "description": "Renkan (連環, «link» in Japanese) is a tool for creating collaborative heuristics maps, enabling real-time editing by multiple users",
+    "type": "Webapp",
+    "link": "http://hdalab.iri-research.org/hdalab/renkan/public/",
+    "stack": ["BackboneJs"],
+    "keywords": ["Frontend"],
+    "when":"2015"
+  }
+]

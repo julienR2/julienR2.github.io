@@ -1,30 +1,45 @@
 .button {
+  display: inline-block;
   font-size: inherit;
+  padding: 0 30px;
+  margin: 20px 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+  height: 52px;
+  line-height: 52px;
+  background: #38A5DB;
+  color: #fff;
+  border-radius: 52px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 0.8;
+  cursor: pointer;
 
   a {
-    display: inline-block;
-    font-size: inherit;
-    padding: 10px 30px;
-    margin: 20px 0;
     text-decoration: none;
-    font-weight: 400;
-    letter-spacing: 1px;
-    height: 52px;
-    background: #38A5DB;
-    color: #fff;
-    border-radius: 52px;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    opacity: 0.8;
-    cursor: pointer;
-
-    &:hover {
-      opacity: 1;
-    }
+    display: inline-block;
+    color: inherit;
   }
 
-  &.light a {
+  &:hover {
+    opacity: 1;
+  }
+
+  &.light {
     background: transparent;
     border: 2px solid #FFFFFF;
   }
+
+  &.white {
+    color: #333333;
+    background: #FFFFFF;
+    opacity: 1;
+
+    &:hover,
+    &.active {
+      color: #FFFFFF;
+      background-color: #1D2026;
+    }
+  }
+
 }
