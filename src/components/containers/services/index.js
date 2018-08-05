@@ -4,7 +4,7 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 
-import Section from '../section';
+import Section from '../../dumbs/section';
 
 import styles from './styles.module.scss';
 

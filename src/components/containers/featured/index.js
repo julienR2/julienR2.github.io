@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Section from '../section';
-import Button from '../button';
+import Section from '../../dumbs/section';
+import Button from '../../dumbs/button';
 
 import styles from './styles.module.scss';
 

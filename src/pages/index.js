@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Jumbotron, Container, Row, Col } from 'reactstrap';
 import Slider from "react-slick";
 
-import Header from '../components/header';
-import Hero from '../components/hero';
-import Services from '../components/services';
-import Featured from '../components/featured';
+import Header from '../components/containers/header';
+import Hero from '../components/containers/hero';
+import Services from '../components/containers/services';
+import Featured from '../components/containers/featured';
 
 export default class IndexPage extends Component {
   constructor(props) {
