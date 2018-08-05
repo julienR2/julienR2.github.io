@@ -1,0 +1,26 @@
+.item {
+  &:hover {
+    .icon {
+      -webkit-transform:translateY(-10px);
+      transform:translateY(-10px);
+      -webkit-transition:-webkit-transform .4s ease-out;
+      transition:transform .4s ease-out;
+    }
+
+    h2 {
+      color: #38A5DB;
+    }
+  }
+
+  .icon {
+    margin: 0 auto 30px;
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+  }
+
+  h2 {
+    font-size: 24px;
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+  }
+}
