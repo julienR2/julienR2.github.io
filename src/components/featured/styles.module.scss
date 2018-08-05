@@ -4,6 +4,7 @@
 }
 
 .imageWrapper {
+  position: relative;
   max-width: 800px;
   height: auto;
   max-width: 800px;
@@ -11,5 +12,29 @@
 
   img {
     width: 100%;
+    -webkit-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+  }
+
+  .button {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+  }
+
+  &:hover {
+    img {
+      opacity: 0.6;
+    }
+
+    .button {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }

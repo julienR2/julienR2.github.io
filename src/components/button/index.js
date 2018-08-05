@@ -9,18 +9,18 @@ export default class Button extends PureComponent {
       PropTypes.object,
       PropTypes.string,
     ]),
-    style: PropTypes.string,
+    className: PropTypes.string,
     href: PropTypes.string,
     target: PropTypes.string,
   }
 
   render() {
     const {
-      children, href, target, style,
+      children, href, target, className,
     } = this.props;
 
     return (
-      <div className={`${styles.button} ${style || ''}`}>
+      <div className={`${styles.button} ${className || ''}`}>
         <a href={href} target={target}>
           {children}
         </a>
