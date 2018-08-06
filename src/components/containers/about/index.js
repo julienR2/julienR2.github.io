@@ -22,7 +22,13 @@ const About = () => (
             I am Julien Rougeron, a 25 years old Frontend Engineer from France. Graduated from the "Université de Technologie de Compiègne", I have a passion for working on developing interfaces using emerging technologies.
             <br /> Particularly interested in UX and UI, I position my personal projects in studying the ways to meet user needs and develop new interactions.
           </p>
-          <Button type="light" className={styles.button}>Hire Me</Button>
+          <Button
+            type="light"
+            className={styles.button}
+            prefixIcon="arrow-down"
+          >
+            Hire Me
+          </Button>
         </Col>
       </Row>
     </Section>

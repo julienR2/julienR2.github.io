@@ -34,7 +34,7 @@ export default class MyWork extends PureComponent {
     const { projects, filters, selectedFilter } = this.state;
     const childElements = _.compact(projects.map((project) => {
       if (selectedFilter === 'All' || _.indexOf(project.keywords, selectedFilter) !== -1) {
-        return <Project data={project} />;
+        return <Project data={project} key={project.title} />;
       }
 
       return null;
