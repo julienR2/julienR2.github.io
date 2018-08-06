@@ -19,17 +19,18 @@ export default class Section extends PureComponent {
       PropTypes.array,
       PropTypes.string,
     ]),
+    id: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,
   }
 
   render() {
     const {
-      title, subtitle, children, className,
+      id, title, subtitle, children, className,
     } = this.props;
 
     return (
-      <div className={`${styles.section} ${className || ''}`}>
+      <div id={id} className={`${styles.section} ${className || ''}`}>
         <Container>
           <div className={styles.sectionHeader}>
             <h1>

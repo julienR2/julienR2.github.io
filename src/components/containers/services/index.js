@@ -11,6 +11,7 @@ import styles from './styles.module.scss';
 const Services = () => (
   <div>
     <Section
+      id="services"
       title="What I Do"
       subtitle="Social traveler and developer, I try to create more meaningful interfaces<br />with better user experience, to help people communicate and interact"
     >

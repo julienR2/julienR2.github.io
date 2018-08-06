@@ -43,6 +43,7 @@ export default class MyWork extends PureComponent {
     return (
       <div>
         <Section
+          id="portfolio"
           title="My Works"
           subtitle="I've had the oportunity to work on many differents projects and technologies.<br />Here are some of them !"
           className={styles.section}

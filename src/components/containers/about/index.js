@@ -12,6 +12,7 @@ import styles from './styles.module.scss';
 const About = () => (
   <div>
     <Section
+      id="about"
       title="About Me"
       className={styles.section}
     >
