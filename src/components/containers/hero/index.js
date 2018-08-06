@@ -28,7 +28,7 @@ export default class Hero extends PureComponent {
 
     return (
       <div>
-        <Jumbotron className={styles.jumbotron}>
+        <Jumbotron id="home" className={styles.jumbotron}>
           <Container>
             <Row>
               <Col sm="6" className={styles.textCol}>
