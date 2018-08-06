@@ -29,7 +29,7 @@
     "type": "Webapp",
     "link": "https://nouma.fr",
     "stack": ["Angular 2", "Angular Universal", "Express"],
-    "keywords": ["Frontend", "Integration", "Email Templating"],
+    "keywords": ["Frontend", "Backend", "Integration", "Email Templating"],
     "when":"January 2016 - June 2018",
     "images": {
       "main": "/images/projects/nouma/main.jpg"
