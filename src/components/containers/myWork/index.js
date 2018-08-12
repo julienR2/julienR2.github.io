@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react';
 import Masonry from 'react-masonry-component';
 import _ from 'lodash';
 
+import ProjectDetails from '../projectDetails';
+
 import Section from '../../dumbs/section';
 import Button from '../../dumbs/button';
 import Project from '../../dumbs/project';
@@ -16,6 +18,7 @@ export default class MyWork extends PureComponent {
       projects: [],
       filters: [],
       selectedFilter: 'All',
+      selectedProject: {},
     };
   }
 
@@ -31,10 +34,17 @@ export default class MyWork extends PureComponent {
   onFilterSelect = filter => () => this.setState({ selectedFilter: filter });
 
   render() {
-    const { projects, filters, selectedFilter } = this.state;
+    const {
+      projects, filters, selectedFilter, selectedProject,
+    } = this.state;
     const childElements = _.compact(projects.map((project) => {
       if (selectedFilter === 'All' || _.indexOf(project.keywords, selectedFilter) !== -1) {
-        return <Project data={project} key={project.title} />;
+        return (
+          <Project
+            key={project.title}
+            data={project}
+          />
+        );
       }
 
       return null;
@@ -67,6 +77,10 @@ export default class MyWork extends PureComponent {
             {childElements}
           </Masonry>
         </Section>
+        <ProjectDetails
+          ref={(ref) => { this.projectDetails = ref; }}
+          project={selectedProject}
+        />
       </div>
     );
   }
