@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Jumbotron, Container, Row, Col } from 'reactstrap';
-import Slider from "react-slick";
 
 import Header from '../components/containers/header';
 import Hero from '../components/containers/hero';
@@ -26,7 +24,7 @@ export default class IndexPage extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  handleScroll = (event) => {
+  handleScroll = () => {
     this.setState({ scroll: window.scrollY });
   }
 
@@ -39,8 +37,8 @@ export default class IndexPage extends Component {
         <Hero />
         <Services />
         <Featured />
-        <About />
         <MyWork />
+        <About />
       </div>
     );
   }

@@ -5,7 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default class Icon extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
-    icon: PropTypes.string,
+    icon: PropTypes.oneOfType([
+      PropTypes.array,
+      PropTypes.string,
+    ]),
   }
 
   render() {

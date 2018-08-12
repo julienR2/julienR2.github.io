@@ -8,6 +8,7 @@ import styles from './styles.module.scss';
 const Featured = () => (
   <div>
     <Section
+      id="featured"
       title="Featured Project"
       subtitle="Have a look at this Social Network for Travelers<br />It is a concrete project we are running <a href='https://www.behance.net/Shandraich' target='_blank' rel='noopener noreferrer'>Shandra</a>, <a href='https://github.com/XavC38' target='_blank' rel='noopener noreferrer'>Xavier</a> and I, with our passion for travelling"
       className={styles.section}
@@ -17,7 +18,7 @@ const Featured = () => (
         <img src="images/nowmad.jpg" alt="nowmad" />
         <Button
           className={styles.button}
-          href="https://nowmad.io"
+          href="https://www.nowmad.io"
           target="_blank"
           suffixIcon="arrow-right"
         >

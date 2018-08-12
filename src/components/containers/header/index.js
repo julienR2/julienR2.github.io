@@ -44,8 +44,8 @@ export default class Header extends Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#about">
-                    About Me
+                  <NavLink href="#featured">
+                    Featured
                   </NavLink>
                 </NavItem>
                 <NavItem className="logo">
@@ -64,8 +64,8 @@ export default class Header extends Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#contact">
-                    Contact Me
+                  <NavLink href="#about-me">
+                    About Me
                   </NavLink>
                 </NavItem>
               </Nav>

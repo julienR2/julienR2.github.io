@@ -27,6 +27,6 @@
         }
     },
     "globals": {
-        "fetch": false
+        "window": false
     }
 }

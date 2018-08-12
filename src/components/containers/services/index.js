@@ -14,6 +14,7 @@ const Services = () => (
       id="services"
       title="What I Do"
       subtitle="Social traveler and developer, I try to create more meaningful interfaces<br />with better user experience, to help people communicate and interact"
+      className={styles.section}
     >
       <Row>
         <Col md="3" sm="6" className={styles.item}>

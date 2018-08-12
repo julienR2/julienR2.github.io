@@ -18,8 +18,14 @@ export default class Button extends PureComponent {
     target: PropTypes.string,
     type: PropTypes.string,
     active: PropTypes.bool,
-    prefixIcon: PropTypes.string,
-    suffixIcon: PropTypes.string,
+    prefixIcon: PropTypes.oneOfType([
+      PropTypes.array,
+      PropTypes.string,
+    ]),
+    suffixIcon: PropTypes.oneOfType([
+      PropTypes.array,
+      PropTypes.string,
+    ]),
   }
 
   render() {
@@ -38,20 +44,26 @@ export default class Button extends PureComponent {
         className={`${styles.button} ${className || ''} ${type ? styles[type] : ''} ${active ? styles.active : ''}`}
         {...buttonProps}
       >
-        {prefixIcon && (
-          <Icon icon={prefixIcon} className={styles.prefixIcon} />
-        )}
         {href ? (
           <a href={href} target={target} className={`${active ? styles.active : ''}`}>
+            {prefixIcon && (
+              <Icon icon={prefixIcon} className={styles.prefixIcon} />
+            )}
             {children}
+            {suffixIcon && (
+              <Icon icon={suffixIcon} className={styles.suffixIcon} />
+            )}
           </a>
         ) : (
           <div className={styles.a}>
+            {prefixIcon && (
+              <Icon icon={prefixIcon} className={styles.prefixIcon} />
+            )}
             {children}
+            {suffixIcon && (
+              <Icon icon={suffixIcon} className={styles.suffixIcon} />
+            )}
           </div>
-        )}
-        {suffixIcon && (
-          <Icon icon={suffixIcon} className={styles.suffixIcon} />
         )}
       </div>
     );
