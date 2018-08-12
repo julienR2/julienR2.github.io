@@ -2,8 +2,6 @@ import React, { PureComponent } from 'react';
 import Masonry from 'react-masonry-component';
 import _ from 'lodash';
 
-import ProjectDetails from '../projectDetails';
-
 import Section from '../../dumbs/section';
 import Button from '../../dumbs/button';
 import Project from '../../dumbs/project';
@@ -77,10 +75,6 @@ export default class MyWork extends PureComponent {
             {childElements}
           </Masonry>
         </Section>
-        <ProjectDetails
-          ref={(ref) => { this.projectDetails = ref; }}
-          project={selectedProject}
-        />
       </div>
     );
   }
