@@ -12,11 +12,12 @@ export default class IndexPage extends Component {
     super(props);
 
     this.state = {
-      scroll: window.scrollY,
+      scroll: null,
     };
   }
 
   componentDidMount() {
+    this.setState({ scroll: window.scrollY });
     window.addEventListener('scroll', this.handleScroll);
   }
 
