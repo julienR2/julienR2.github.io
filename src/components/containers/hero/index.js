@@ -5,6 +5,9 @@ import {
 import Slider from 'react-slick';
 
 import styles from './styles.module.scss';
+import nowmad from '../../../../static/images/projects/nowmad/slide.jpg';
+import renkan from '../../../../static/images/projects/renkan/main.jpg';
+import nouma from '../../../../static/images/projects/nouma/slide.jpg';
 
 export default class Hero extends PureComponent {
   constructor(props) {
@@ -44,13 +47,13 @@ export default class Hero extends PureComponent {
                   <img className="img-fluid img-center" src="images/imac.png" alt="imac" />
                   <Slider {...slideSettings} className={styles.slickSlider}>
                     <div>
-                      <img src="images/slides/slide_4.jpg" alt="slide4" />
+                      <img src={nowmad} alt="nowmad" />
                     </div>
                     <div>
-                      <img src="images/slides/slide_2.jpg" alt="slide2" />
+                      <img src={nouma} alt="nouma" />
                     </div>
                     <div>
-                      <img src="images/slides/slide_3.jpg" alt="slide3" />
+                      <img src={renkan} alt="renkan" />
                     </div>
                   </Slider>
                 </div>
