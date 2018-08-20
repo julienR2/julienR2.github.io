@@ -15,7 +15,7 @@ const Featured = () => (
     >
       <div className={styles.imageWrapper}>
         <img src="images/chrome.png" alt="chrome" />
-        <img src="images/nowmad.jpg" alt="nowmad" />
+        <img src="images/projects/nowmad/slide.jpg" alt="nowmad" />
         <Button
           className={styles.button}
           href="https://www.nowmad.io"
