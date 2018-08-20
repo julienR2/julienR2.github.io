@@ -16,7 +16,6 @@ export default class MyWork extends PureComponent {
       projects: [],
       filters: [],
       selectedFilter: 'All',
-      selectedProject: {},
     };
   }
 
@@ -33,7 +32,7 @@ export default class MyWork extends PureComponent {
 
   render() {
     const {
-      projects, filters, selectedFilter, selectedProject,
+      projects, filters, selectedFilter,
     } = this.state;
     const childElements = _.compact(projects.map((project) => {
       if (selectedFilter === 'All' || _.indexOf(project.keywords, selectedFilter) !== -1) {

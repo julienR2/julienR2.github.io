@@ -2,6 +2,11 @@
   background-color: #1D2026;
   color: #FFFFFF;
 
+  &:before {
+    border-width: 20px 100vw 0 0 !important;
+    border-color: transparent #1D2026 transparent transparent !important;
+  }
+
   p {
     font-size: 21px;
     line-height: 28px;

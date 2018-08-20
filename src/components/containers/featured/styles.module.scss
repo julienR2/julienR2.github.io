@@ -1,5 +1,10 @@
 .section {
   padding-bottom: 0;
+
+  &:before {
+    border-width: 20px 100vw 0 0 !important;
+    border-color: transparent #FFFFFF transparent transparent !important;
+  }
 }
 
 .imageWrapper {
