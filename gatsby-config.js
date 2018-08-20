@@ -7,5 +7,12 @@ module.exports = {
         precision: 8,
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-124272859-1',
+        head: true,
+      },
+    },
   ],
-}
+};

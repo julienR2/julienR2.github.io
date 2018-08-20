@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 
 import styles from './styles.module.scss';
 import nowmad from '../../../../static/images/projects/nowmad/slide.jpg';
-import renkan from '../../../../static/images/projects/renkan/main.jpg';
+import renkan from '../../../../static/images/projects/renkan/slide.jpg';
 import nouma from '../../../../static/images/projects/nouma/slide.jpg';
 
 export default class Hero extends PureComponent {
