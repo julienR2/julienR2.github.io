@@ -34,7 +34,7 @@ export default class Hero extends PureComponent {
         <Jumbotron id="home" className={styles.jumbotron}>
           <Container>
             <Row>
-              <Col sm="6" className={styles.textCol}>
+              <Col sm="12" md="6" className={styles.textCol}>
                 <h1>
                   Hi, I am Julien
                 </h1>
@@ -42,7 +42,7 @@ export default class Hero extends PureComponent {
                   a visual and interaction developer
                 </p>
               </Col>
-              <Col sm="6">
+              <Col sm="12" md="6">
                 <div className={styles.imacFrame}>
                   <img className="img-fluid img-center" src="images/imac.png" alt="imac" />
                   <Slider {...slideSettings} className={styles.slickSlider}>

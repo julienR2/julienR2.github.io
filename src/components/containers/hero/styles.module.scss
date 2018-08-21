@@ -22,6 +22,8 @@
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 0.02em;
+    line-height: 1;
+    margin-bottom: 60px;
   }
 
   .imacFrame {
@@ -60,5 +62,17 @@
     opacity: 1;
     -webkit-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    padding-top: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .jumbotron {
+    padding-top: 120px;
   }
 }
